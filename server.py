@@ -1,4 +1,5 @@
 from urllib.request import urlopen
+import urllib.request
 import pandas as pd
 import json
 import dash
@@ -19,8 +20,11 @@ startDate, endDate = str(startDate), str(endDate)
 
 
 url = f"https://www.treasurydirect.gov/TA_WS/securities/search?format=json&startDate={startDate}&endDate={endDate}&dateFieldName=auctionDate"
+req = urllib.request.Request(url)
+# Customize the default User-Agent header value:
+req.add_header("ngrok-skip-browser-warning",  "69420")
+response = urlopen(req)
 
-response = urlopen(url)
 datajson = json.dumps(json.loads(response.read()))
 data = pd.read_json(url)
 
@@ -354,4 +358,4 @@ def update_charts(
     return bill_chart_figure, bond_chart_figure
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server(host='0.0.0.0', port=8050, debug=True)
