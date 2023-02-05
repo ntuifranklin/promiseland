@@ -23,7 +23,7 @@ bill_data = data.query("pricePer100 != '' and securityType == 'Bill'")
 bill_data.sort_values("issueDate", inplace=True)
 
 bond_data = data.query("securityType == 'Bond'")
-bond_data.sort_values("issueDate", inplace=True)
+bond_data.sort_values("securityTerm", inplace=True)
 
 external_stylesheets = [
     {
@@ -92,13 +92,26 @@ app.layout = html.Div(
                             figure={
                                 "data": [
                                     {
-                                        "x": bond_data["issueDate"],
+                                        "x": bond_data["securityTerm"],
                                         "y": bond_data["interestRate"],
                                         "type": "lines",
-                                        "hovertemplate":
+                                        "hovertemplate": "$%{y:.2f}"
+                                                            "<extra></extra>"
                                     },
                                 ],
-                                "layout": {"title": "Treasury Bonds Price and Interest Rate"}
+                                "layout": {
+                                    "title": {
+                                        "text": "Treasury Bonds Price and Interest Rate",
+                                        "x": 0.05,
+                                        "xanchor": "left",
+                                    },
+                                    "xaxis" : {"fixedrange": True},
+                                    "yaxis": {
+                                        "tickprefix": "$",
+                                        "fixedrange": True,
+                                    },
+                                    
+                                }
                             }
                         )
             ],
