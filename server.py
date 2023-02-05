@@ -29,10 +29,10 @@ for column_name in ["issueDate","maturityDate","announcementDate","auctionDate"]
         data[column_name] = pd.to_datetime(data[column_name], format="%Y-%m-%dT%H:%M:%S")
 
 bill_data = data.query("pricePer100 != '' and securityType == 'Bill'")
-bill_data.sort_values("issueDate", inplace=True)
+bill_data.sort_values("auctionDate", inplace=True)
 
 bond_data = data.query("securityType == 'Bond'")
-bond_data.sort_values("securityTerm", inplace=True)
+bond_data.sort_values("auctionDate", inplace=True)
 
 external_stylesheets = [
     {
@@ -156,7 +156,7 @@ app.layout = html.Div(
                         children=[
                             html.Div(children="Bond Security Term", className="menu-title"),
                             dcc.Dropdown(
-                                id="bond-chart-security-type-filter",
+                                id="bond-chart-security-term-filter",
                                 options=[
                                     {"label": bond_security_term, "value": bond_security_term}
                                     for bond_security_term in bond_data.securityTerm.unique()
@@ -210,8 +210,9 @@ app.layout = html.Div(
                                 figure={
                                     "data": [
                                         {
-                                            "x": bond_data["securityTerm"],
-                                            "y": bond_data["interestRate"],
+                                            
+                                            "x": bond_data["interestRate"],
+                                            "y": bond_data["securityTerm"],
                                             "type": "lines",
                                             "hovertemplate": "$%{y:.2f}"
                                                                 "<extra></extra>"
@@ -243,6 +244,121 @@ app.layout = html.Div(
     className="jumbotron jumbotron-fluid",
 )
 
+@app.callback(
+    [Output("bill-chart","figure"), Output("bond-chart","figure")],
+    [
+        # bills
+        Input("bill-security-term-filter", "value"),
+
+        Input("bill-chart-issue-date-range", "start_date"),
+        Input("bill-chart-issue-date-range", "end_date"),
+
+        Input("bill-chart-auction-date-range", "start_date"),
+        Input("bill-chart-auction-date-range", "end_date"),
+        
+        Input("bill-chart-maturity-date-range", "start_date"),
+        Input("bill-chart-maturity-date-range", "end_date"),
+
+        # bonds
+        
+        Input("bond-chart-security-term-filter", "value"),
+
+        Input("bond-chart-issue-date-range", "start_date"),
+        Input("bond-chart-issue-date-range", "end_date"),
+
+        Input("bond-chart-auction-date-range", "start_date"),
+        Input("bond-chart-auction-date-range", "end_date"),
+        
+        Input("bond-chart-maturity-date-range", "start_date"),
+        Input("bond-chart-maturity-date-range", "end_date"),
+
+    ],
+)
+def update_charts(
+    # bill
+    bill_term_filter, 
+    bill_issue_start_date, bill_issue_end_date, 
+    bill_auction_start_date, bill_auction_end_date,
+    bill_maturity_start_date, bill_maturity_end_date,
+
+    # bond
+    bond_term_filter,
+    bond_issue_start_date, bond_issue_end_date,
+    bond_auction_start_date, bond_auction_end_date,
+    bond_maturity_start_date, bond_maturity_end_date
+    ):
+    billmask = (
+        ( bill_data.securityTerm == bill_term_filter)
+        & (bill_data.issueDate >= bill_issue_start_date)
+        & ((bill_data.issueDate <= bill_issue_end_date))
+        & (bill_data.auctionDate >= bill_auction_start_date)
+        & ((bill_data.auctionDate <= bill_auction_end_date))
+        & (bill_data.maturityDate >= bill_maturity_start_date)
+        & ((bill_data.maturityDate <= bill_maturity_end_date))
+    )
+    filtered_bill_data = bill_data.loc[billmask, :]
+    bill_chart_figure = {
+                        "data": [
+                            {
+                                "x": filtered_bill_data["issueDate"],
+                                "y": filtered_bill_data["pricePer100"],
+                                "type": "lines",
+                                "hovertemplate": "$%{y:.2f}"
+                                                    "<extra></extra>"
+                            },
+
+                        ],
+                        "layout": {
+                            "title": {
+                                "text": "Treasury Bills Price",
+                                "x": 0.05,
+                                "xanchor": "left",
+                            },
+                            "xaxis": {"fixedrange": True},
+                            "yaxis": {
+                                "tickprefix": "$",
+                                "fixedrange": True,
+                            },
+                            "colorway": ["#17B897"],
+                        },
+        }
+    
+    bondmask = (
+        ( bond_data.securityTerm == bond_term_filter)
+        & (bond_data.issueDate >= bond_issue_start_date)
+        & ((bond_data.issueDate <= bond_issue_end_date))
+        & (bond_data.auctionDate >= bond_auction_start_date)
+        & ((bond_data.auctionDate <= bond_auction_end_date))
+        & (bond_data.maturityDate >= bond_maturity_start_date)
+        & ((bond_data.maturityDate <= bond_maturity_end_date))
+    )
+    
+    filtered_bond_data = bond_data.loc[bondmask, :]
+    bond_chart_figure = {
+                        "data": [
+                            { 
+                                "x": bond_data["interestRate"],
+                                "y": bond_data["securityTerm"],
+                                "type": "lines",
+                                "hovertemplate": "$%{y:.2f}"
+                                                    "<extra></extra>"
+                            },
+                        ],
+                        "layout": {
+                            "title": {
+                                "text": "Treasury Bonds Price and Interest Rate",
+                                "x": 0.05,
+                                "xanchor": "left",
+                                },
+                            "xaxis" : {"fixedrange": True},
+                            "yaxis": {
+                                "tickprefix": "$",
+                                "fixedrange": True,
+                                },
+                            
+                        }
+            }
+    return bill_chart_figure, bond_chart_figure
 
 if __name__ == "__main__":
     app.run_server(debug=True)
