@@ -7,6 +7,8 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta 
 import numpy as np
 from dash.dependencies import Output, Input
+import plotly.express as px
+import plotly.graph_objects as go
 
 now = datetime.now()
 last_month_date = now + relativedelta(months=-12)
@@ -16,7 +18,7 @@ endDate = datetime.today().strftime(date_format)
 startDate, endDate = str(startDate), str(endDate)
 
 
-url = f"https://www.treasurydirect.gov/TA_WS/securities/search?format=json&startDate={startDate}&endDate={endDate}&dateFieldName=issueDate"
+url = f"https://www.treasurydirect.gov/TA_WS/securities/search?format=json&startDate={startDate}&endDate={endDate}&dateFieldName=auctionDate"
 
 response = urlopen(url)
 datajson = json.dumps(json.loads(response.read()))
@@ -43,6 +45,7 @@ external_stylesheets = [
 ]
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app.title = "Treasury Analytics: The Promise Land of Treasury Securities !"
+
 app.layout = html.Div(
     children=[
         html.Div(
@@ -124,7 +127,7 @@ app.layout = html.Div(
                                             "x": bill_data["issueDate"],
                                             "y": bill_data["pricePer100"],
                                             "type": "lines",
-                                            "hovertemplate": "$%{y:.2f}"
+                                            "hovertemplate": "$%{y:.6f}"
                                                                 "<extra></extra>"
                                         },
 
@@ -154,18 +157,6 @@ app.layout = html.Div(
             children=[
                     html.Div(
                         children=[
-                            html.Div(children="Bond Security Term", className="menu-title"),
-                            dcc.Dropdown(
-                                id="bond-chart-security-term-filter",
-                                options=[
-                                    {"label": bond_security_term, "value": bond_security_term}
-                                    for bond_security_term in bond_data.securityTerm.unique()
-                                ],
-                                value="",
-                                clearable=False,
-                                searchable=True,
-                                className="dropdown",
-                            ),
                             html.Div(
                                 children="Bond Issue Date",
                                 className="menu-title",
@@ -211,11 +202,13 @@ app.layout = html.Div(
                                     "data": [
                                         {
                                             
-                                            "x": bond_data["interestRate"],
-                                            "y": bond_data["securityTerm"],
-                                            "type": "lines",
-                                            "hovertemplate": "$%{y:.2f}"
-                                                                "<extra></extra>"
+                                            "x": bond_data["securityTerm"],
+                                            "y": bond_data["interestRate"],
+                                            "type": "scatter",
+                                            "hovertemplate": "$%{y:.2f} "
+                                                            "<extra></extra>"
+                                                            " matures on %{x} "
+                                                            "<extra></extra>"
                                         },
                                     ],
                                     "layout": {
@@ -260,8 +253,6 @@ app.layout = html.Div(
         Input("bill-chart-maturity-date-range", "end_date"),
 
         # bonds
-        
-        Input("bond-chart-security-term-filter", "value"),
 
         Input("bond-chart-issue-date-range", "start_date"),
         Input("bond-chart-issue-date-range", "end_date"),
@@ -282,7 +273,7 @@ def update_charts(
     bill_maturity_start_date, bill_maturity_end_date,
 
     # bond
-    bond_term_filter,
+    
     bond_issue_start_date, bond_issue_end_date,
     bond_auction_start_date, bond_auction_end_date,
     bond_maturity_start_date, bond_maturity_end_date
@@ -303,7 +294,7 @@ def update_charts(
                                 "x": filtered_bill_data["issueDate"],
                                 "y": filtered_bill_data["pricePer100"],
                                 "type": "lines",
-                                "hovertemplate": "$%{y:.2f}"
+                                "hovertemplate": "$%{y:.6f}"
                                                     "<extra></extra>"
                             },
 
@@ -324,8 +315,8 @@ def update_charts(
         }
     
     bondmask = (
-        ( bond_data.securityTerm == bond_term_filter)
-        & (bond_data.issueDate >= bond_issue_start_date)
+        
+        (bond_data.issueDate >= bond_issue_start_date)
         & ((bond_data.issueDate <= bond_issue_end_date))
         & (bond_data.auctionDate >= bond_auction_start_date)
         & ((bond_data.auctionDate <= bond_auction_end_date))
@@ -337,11 +328,13 @@ def update_charts(
     bond_chart_figure = {
                         "data": [
                             { 
-                                "x": bond_data["interestRate"],
-                                "y": bond_data["securityTerm"],
-                                "type": "lines",
-                                "hovertemplate": "$%{y:.2f}"
-                                                    "<extra></extra>"
+                                "x": filtered_bond_data["securityTerm"],
+                                "y": filtered_bond_data["interestRate"],
+                                "type": "scatter",
+                                "hovertemplate": "$%{y:.2f} "
+                                                 "<extra></extra>"
+                                                 " matures on %{x} "
+                                                 "<extra></extra>"
                             },
                         ],
                         "layout": {
