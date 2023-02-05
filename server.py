@@ -10,7 +10,7 @@ import numpy as np
 from dash.dependencies import Output, Input
 import plotly.express as px
 import plotly.graph_objects as go
-
+import random
 now = datetime.now()
 last_month_date = now + relativedelta(months=-12)
 date_format = "%m/%d/%Y"
@@ -22,7 +22,9 @@ startDate, endDate = str(startDate), str(endDate)
 url = f"https://www.treasurydirect.gov/TA_WS/securities/search?format=json&startDate={startDate}&endDate={endDate}&dateFieldName=auctionDate"
 req = urllib.request.Request(url)
 # Customize the default User-Agent header value:
-req.add_header("ngrok-skip-browser-warning",  "69420")
+
+u = str(random.randint(50000,100000))
+req.add_header("ngrok-skip-browser-warning",  u)
 response = urlopen(req)
 
 datajson = json.dumps(json.loads(response.read()))
@@ -58,7 +60,7 @@ app.layout = html.Div(
                     html.H1(children="Treasury Security analytics", className="header-title"),
                     html.P(
                         children=f"analysze the behavior of Treasury Securities"
-                        f" this will mainly include treasury bills"
+                        f" this will mainly include treasury bills and bonds "
                         f" between {startDate} and {endDate}",
                         className="header-description",
                     ),
