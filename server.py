@@ -6,20 +6,21 @@ import dash
 from dash import html, dcc
 from datetime import datetime
 from dateutil.relativedelta import relativedelta 
-import numpy as np
 from dash.dependencies import Output, Input
-import plotly.express as px
-import plotly.graph_objects as go
 import random
+from functions import *
+
+
+
 now = datetime.now()
-last_month_date = now + relativedelta(months=-12)
+last_month_date = now + relativedelta(weeks=-2)
 date_format = "%m/%d/%Y"
 startDate = last_month_date.strftime(date_format)
-endDate = datetime.today().strftime(date_format)
+endDate = (datetime.now() + relativedelta(weeks=6)).strftime(date_format)
 startDate, endDate = str(startDate), str(endDate)
 
 
-url = f"https://www.treasurydirect.gov/TA_WS/securities/search?format=json&startDate={startDate}&endDate={endDate}&dateFieldName=auctionDate"
+url = f"https://www.treasurydirect.gov/TA_WS/securities/search?format=json&startDate={startDate}&endDate={endDate}&dateFieldName=issueDate"
 req = urllib.request.Request(url)
 # Customize the default User-Agent header value:
 
@@ -37,7 +38,20 @@ for column_name in ["issueDate","maturityDate","announcementDate","auctionDate"]
         data[column_name] = pd.to_datetime(data[column_name], format="%Y-%m-%dT%H:%M:%S")
 
 bill_data = data.query("pricePer100 != '' and securityType == 'Bill'")
-bill_data.sort_values("auctionDate", inplace=True)
+
+
+
+bill_fig = get_bill_figure(bill_data)
+
+styles = {
+    'pre': {
+        'border': 'thin lightgrey solid',
+        'overflowX': 'scroll'
+    }
+}
+# bill_fig.update_layout(clickmode='event+select')
+
+
 
 bond_data = data.query("securityType == 'Bond'")
 bond_data.sort_values("auctionDate", inplace=True)
@@ -50,7 +64,7 @@ external_stylesheets = [
     },
 ]
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-app.title = "Treasury Analytics: The Promise Land of Treasury Securities !"
+app.title = "Treasury Securities Analytics: A Decision Tool in the Purhcase of Treasury Bill Secrities"
 
 app.layout = html.Div(
     children=[
@@ -74,18 +88,7 @@ app.layout = html.Div(
                 # menu filters for bill-chart
                 html.Div(
                     children=[
-                        html.Div(children="Bill Security Term", className="menu-title"),
-                        dcc.Dropdown(
-                            id="bill-security-term-filter",
-                            options=[
-                                {"label": bill_security_term, "value": bill_security_term}
-                                for bill_security_term in np.sort(bill_data.securityTerm.unique())
-                            ],
-                            value="4-Week",
-                            searchable=True,
-                            clearable=False,
-                            className="dropdown",
-                        ),
+                        
                         html.Div(
                             children="Bill Issue Date",
                             className="menu-title",
@@ -127,31 +130,7 @@ app.layout = html.Div(
                         dcc.Graph(
                                 id="bill-chart",
                                 config={"displayModeBar": False},
-                                figure={
-                                    "data": [
-                                        {
-                                            "x": bill_data["issueDate"],
-                                            "y": bill_data["pricePer100"],
-                                            "type": "lines",
-                                            "hovertemplate": "$%{y:.6f}"
-                                                                "<extra></extra>"
-                                        },
-
-                                    ],
-                                    "layout": {
-                                        "title": {
-                                            "text": "Treasury Bills Price",
-                                            "x": 0.05,
-                                            "xanchor": "left",
-                                        },
-                                        "xaxis": {"fixedrange": True},
-                                        "yaxis": {
-                                            "tickprefix": "$",
-                                            "fixedrange": True,
-                                        },
-                                        "colorway": ["#17B897"],
-                                    },
-                                },
+                                figure=bill_fig,
                             ),
                     ],
                     className="card",
@@ -247,7 +226,7 @@ app.layout = html.Div(
     [Output("bill-chart","figure"), Output("bond-chart","figure")],
     [
         # bills
-        Input("bill-security-term-filter", "value"),
+        # Input("bill-security-term-filter", "value"),
 
         Input("bill-chart-issue-date-range", "start_date"),
         Input("bill-chart-issue-date-range", "end_date"),
@@ -273,7 +252,7 @@ app.layout = html.Div(
 )
 def update_charts(
     # bill
-    bill_term_filter, 
+    # bill_term_filter, 
     bill_issue_start_date, bill_issue_end_date, 
     bill_auction_start_date, bill_auction_end_date,
     bill_maturity_start_date, bill_maturity_end_date,
@@ -285,20 +264,28 @@ def update_charts(
     bond_maturity_start_date, bond_maturity_end_date
     ):
     billmask = (
-        ( bill_data.securityTerm == bill_term_filter)
-        & (bill_data.issueDate >= bill_issue_start_date)
+        # ( bill_data.securityTerm == bill_term_filter) &
+        (bill_data.issueDate >= bill_issue_start_date)
         & ((bill_data.issueDate <= bill_issue_end_date))
         & (bill_data.auctionDate >= bill_auction_start_date)
         & ((bill_data.auctionDate <= bill_auction_end_date))
         & (bill_data.maturityDate >= bill_maturity_start_date)
         & ((bill_data.maturityDate <= bill_maturity_end_date))
     )
+
     filtered_bill_data = bill_data.loc[billmask, :]
+        
+
+    
+    
+    filtered_bill_data = filtered_bill_data.sort_values("securityTerm")
+
+    filtered_bill_fig = get_bill_figure(filtered_bill_data)
     bill_chart_figure = {
                         "data": [
                             {
-                                "x": filtered_bill_data["issueDate"],
-                                "y": filtered_bill_data["pricePer100"],
+                                "x": filtered_bill_data["securityTerm"],
+                                "y": filtered_bill_data["accruedInterestPer100"],
                                 "type": "lines",
                                 "hovertemplate": "$%{y:.6f}"
                                                     "<extra></extra>"
@@ -357,7 +344,7 @@ def update_charts(
                             
                         }
             }
-    return bill_chart_figure, bond_chart_figure
+    return filtered_bill_fig, bond_chart_figure
 
 if __name__ == "__main__":
-    app.run_server(host='0.0.0.0', port=8050, debug=False)
+    app.run_server(host='0.0.0.0', port=8050, debug=True)
