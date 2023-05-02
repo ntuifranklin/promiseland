@@ -1,5 +1,9 @@
 
 
+import numpy as np
+import plotly.express as px
+import plotly.graph_objects as go
+import pandas as pd
 
 
 
@@ -87,4 +91,32 @@ def is_day_week_month_year(s: str) -> bool:
 
 
 
+def get_bill_figure(bill_data: pd.DataFrame):
+    if bill_data is None :
+        return None
+    
+    bill_data['pricePer100'] = bill_data['pricePer100'].astype(float)
+    
+    bill_data['profitPer100'] = 100.0 - bill_data['pricePer100'].astype(float)
+    
+    bill_data['profitPer100'] = bill_data['profitPer100'].round(decimals = 3)
+        
+    bill_data['daysInYear'] = bill_data['securityTerm'].map(multi_term_to_days)
+    bill_data['term_apr'] = bill_data['pricePer100'].map(lambda x: (100-x)/x)
+    bill_data['terms_per_year'] = bill_data['daysInYear'].map(lambda x: 365.0 / float(x))
+    bill_data['annual_revenue'] = (1.0 + bill_data['terms_per_year'].astype(float)*bill_data['profitPer100'].astype(float) )
+    #bill_data['annual_revenue'] = bill_data['multiplier'] * bill_data['profitPer100']
+    p = bill_data[['cusip','issueDate','securityTerm','terms_per_year']]
+    print("bill data columns \n", p.columns.to_list())
+    print("bill data head \n", p.head())
+    #df = df.groupby(['securityTerm','issueDate']).count()['profitPer100'].unstack()
+    
+    bill_data = bill_data.sort_values("annual_revenue")
+    
+    bill_data['terms_per_year'] = bill_data['terms_per_year'].round(decimals = 3)
+    bill_fig = px.scatter(bill_data, x="securityTerm", y="annual_revenue", symbol='terms_per_year')
+
+    return bill_fig
+    
+    
 

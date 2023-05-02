@@ -4,65 +4,67 @@ import pandas as pd
 import json
 import dash
 from dash import html, dcc
-import dash_bootstrap_components as dbc
-from datetime import datetime, timedelta
+from datetime import datetime
 from dateutil.relativedelta import relativedelta 
-import numpy as np
 from dash.dependencies import Output, Input
-import plotly.express as px
-import plotly.graph_objects as go
 import random
 from functions import *
 
+
+
 now = datetime.now()
-past_date = now + relativedelta(days=-14)
-next_week = now + relativedelta(days=56)
+last_month_date = now + relativedelta(weeks=-2)
 date_format = "%m/%d/%Y"
-next_week = next_week.strftime(date_format)
-today = now.strftime(date_format)
-today, next_week  = str(today) , str(next_week)
-startDate = past_date.strftime(date_format)
-endDate = datetime.today().strftime(date_format)
+startDate = last_month_date.strftime(date_format)
+endDate = (datetime.now() + relativedelta(weeks=6)).strftime(date_format)
 startDate, endDate = str(startDate), str(endDate)
 
-url = f"https://www.treasurydirect.gov/TA_WS/securities/search?format=json&startDate={startDate}&endDate={next_week}&dateFieldName=issueDate"
-bill_url = f"https://www.treasurydirect.gov/TA_WS/securities/announced?format=json&type=Bill"
+
+url = f"https://www.treasurydirect.gov/TA_WS/securities/search?format=json&startDate={startDate}&endDate={endDate}&dateFieldName=issueDate"
 req = urllib.request.Request(url)
-bill_request = urllib.request.Request(bill_url)
 # Customize the default User-Agent header value:
 
 u = str(random.randint(50000,100000))
 req.add_header("ngrok-skip-browser-warning",  u)
 response = urlopen(req)
-# bill_response = urlopen(bill_request)
+
 datajson = json.dumps(json.loads(response.read()))
-# bill_data_json = json.dumps(json.loads(bill_response.read()))
-# bill_data = pd.read_json(bill_data_json)
 data = pd.read_json(url)
-data['daysInYear'] = data['securityTerm'].map(multi_term_to_days)
-bill_data = data.query("securityType == 'Bill' and pricePer100 != '' ")
-# bill_data['daysInYear'] = bill_data['securityTerm'].map(multi_term_to_days)
+
 # formatting date such that it is pickabe by dcc.datepicker_blabla
 for column_name in ["issueDate","maturityDate","announcementDate","auctionDate"]:
     c = column_name.lower()
     if "date" in c:  
         data[column_name] = pd.to_datetime(data[column_name], format="%Y-%m-%dT%H:%M:%S")
-        bill_data[column_name] = pd.to_datetime(bill_data[column_name], format="%Y-%m-%dT%H:%M:%S")
 
-bill_data.sort_values("auctionDate", inplace=True)
+bill_data = data.query("pricePer100 != '' and securityType == 'Bill'")
+
+
+
+bill_fig = get_bill_figure(bill_data)
+
+styles = {
+    'pre': {
+        'border': 'thin lightgrey solid',
+        'overflowX': 'scroll'
+    }
+}
+# bill_fig.update_layout(clickmode='event+select')
+
+
 
 bond_data = data.query("securityType == 'Bond'")
 bond_data.sort_values("auctionDate", inplace=True)
-bill_data['term_apr'] = bill_data['pricePer100'].map(lambda x: (100.0-float(x))/float(x))
-bill_data['terms_per_year'] = bill_data['daysInYear'].map(lambda x: 365.0 / float(x))
-bill_data['multiplier'] = (1.0 + bill_data['term_apr'].astype(float) )
-bill_data['final_annual_multiplier'] = bill_data['multiplier'].pow( bill_data['terms_per_year'] )
-bill_data['annual_revenue'] = bill_data['final_annual_multiplier'].astype(float) * bill_data['pricePer100'].astype(float)
-bill_fig = px.bar(bill_data, x="securityTerm", y="annual_revenue", color="pricePer100", barmode="group")
-external_stylesheets=[dbc.themes.LUX]
 
+external_stylesheets = [
+    {
+        "href": "https://fonts.googleapis.com/css2?"
+                "family=Lato:wght@400;700&display=swap",
+        "rel": "stylesheet",
+    },
+]
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-app.title = "Treasury Analytics: The Promise Land of Treasury Securities !"
+app.title = "Treasury Securities Analytics: A Decision Tool in the Purhcase of Treasury Bill Secrities"
 
 app.layout = html.Div(
     children=[
@@ -88,7 +90,7 @@ app.layout = html.Div(
                     children=[
                         
                         html.Div(
-                            children="Issue Date",
+                            children="Bill Issue Date",
                             className="menu-title",
                         ),
                         dcc.DatePickerRange(
@@ -128,31 +130,7 @@ app.layout = html.Div(
                         dcc.Graph(
                                 id="bill-chart",
                                 config={"displayModeBar": False},
-                                figure={
-                                    "data": [
-                                        {
-                                            "x": bill_data["securityTerm"],
-                                            "y": bill_data["annual_revenue"],
-                                            "type": "bar",
-                                            "hovertemplate": "%{y}"
-                                                                "<extra></extra>"
-                                        },
-
-                                    ],
-                                    "layout": {
-                                        "title": {
-                                            "text": "Treasury Bills Price",
-                                            "x": 0.5,
-                                            "xanchor": "left",
-                                        },
-                                        "xaxis": {"fixedrange": True},
-                                        "yaxis": {
-                                            #"tickprefix": "",
-                                            "fixedrange": True,
-                                        },
-                                        "colorway": ["#17B897"],
-                                    },
-                                },
+                                figure=bill_fig,
                             ),
                     ],
                     className="card",
@@ -221,7 +199,7 @@ app.layout = html.Div(
                                     "layout": {
                                         "title": {
                                             "text": "Treasury Bonds Price and Interest Rate",
-                                            "x": 0.005,
+                                            "x": 0.05,
                                             "xanchor": "left",
                                             },
                                         "xaxis" : {"fixedrange": True},
@@ -248,7 +226,7 @@ app.layout = html.Div(
     [Output("bill-chart","figure"), Output("bond-chart","figure")],
     [
         # bills
-        #Input("bill-security-term-filter", "value"),
+        # Input("bill-security-term-filter", "value"),
 
         Input("bill-chart-issue-date-range", "start_date"),
         Input("bill-chart-issue-date-range", "end_date"),
@@ -274,7 +252,7 @@ app.layout = html.Div(
 )
 def update_charts(
     # bill
-    #bill_term_filter, 
+    # bill_term_filter, 
     bill_issue_start_date, bill_issue_end_date, 
     bill_auction_start_date, bill_auction_end_date,
     bill_maturity_start_date, bill_maturity_end_date,
@@ -294,14 +272,22 @@ def update_charts(
         & (bill_data.maturityDate >= bill_maturity_start_date)
         & ((bill_data.maturityDate <= bill_maturity_end_date))
     )
+
     filtered_bill_data = bill_data.loc[billmask, :]
+        
+
+    
+    
+    filtered_bill_data = filtered_bill_data.sort_values("securityTerm")
+
+    filtered_bill_fig = get_bill_figure(filtered_bill_data)
     bill_chart_figure = {
                         "data": [
                             {
                                 "x": filtered_bill_data["securityTerm"],
-                                "y": filtered_bill_data["annual_revenue"],
-                                "type": "bar",
-                                "hovertemplate": "%{y}"
+                                "y": filtered_bill_data["accruedInterestPer100"],
+                                "type": "lines",
+                                "hovertemplate": "$%{y:.6f}"
                                                     "<extra></extra>"
                             },
 
@@ -309,12 +295,12 @@ def update_charts(
                         "layout": {
                             "title": {
                                 "text": "Treasury Bills Price",
-                                "x": 0.5,
+                                "x": 0.05,
                                 "xanchor": "left",
                             },
                             "xaxis": {"fixedrange": True},
                             "yaxis": {
-                                #"tickprefix": "$",
+                                "tickprefix": "$",
                                 "fixedrange": True,
                             },
                             "colorway": ["#17B897"],
@@ -358,9 +344,7 @@ def update_charts(
                             
                         }
             }
-    return bill_chart_figure, bond_chart_figure
+    return filtered_bill_fig, bond_chart_figure
 
 if __name__ == "__main__":
-    # if on production do 
-    # app.run_server(host='0.0.0.0', port=9090, debug=True)
-    app.run_server(port=8899, debug=True)
+    app.run_server(host='0.0.0.0', port=8050, debug=True)
