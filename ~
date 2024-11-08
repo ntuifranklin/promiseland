@@ -1,0 +1,129 @@
+[Sun Mar 10 19:13:58.499919 2024] [mpm_event:notice] [pid 9470:tid 139921289389952] AH00489: Apache/2.4.52 (Ubuntu) configured -- resuming normal operations
+[Sun Mar 10 19:13:58.500061 2024] [core:notice] [pid 9470:tid 139921289389952] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 19:14:35.891603 2024] [mpm_event:notice] [pid 9470:tid 139921289389952] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Mar 10 19:14:35.960748 2024] [mpm_event:notice] [pid 9818:tid 140525426825088] AH00489: Apache/2.4.52 (Ubuntu) configured -- resuming normal operations
+[Sun Mar 10 19:14:35.961033 2024] [core:notice] [pid 9818:tid 140525426825088] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 19:39:02.405089 2024] [mpm_event:notice] [pid 9818:tid 140525426825088] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Mar 10 19:39:02.582247 2024] [mpm_event:notice] [pid 28101:tid 140608453474176] AH00489: Apache/2.4.52 (Ubuntu) configured -- resuming normal operations
+[Sun Mar 10 19:39:02.582457 2024] [core:notice] [pid 28101:tid 140608453474176] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 20:13:12.541779 2024] [mpm_event:notice] [pid 28101:tid 140608453474176] AH00493: SIGUSR1 received.  Doing graceful restart
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+[Sun Mar 10 20:13:12.551705 2024] [mpm_event:notice] [pid 28101:tid 140608453474176] AH00489: Apache/2.4.52 (Ubuntu) configured -- resuming normal operations
+[Sun Mar 10 20:13:12.551723 2024] [core:notice] [pid 28101:tid 140608453474176] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 20:32:04.940028 2024] [mpm_event:notice] [pid 28101:tid 140608453474176] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Mar 10 20:32:05.024911 2024] [mpm_event:notice] [pid 34098:tid 139886145165184] AH00489: Apache/2.4.52 (Ubuntu) mod_wsgi/4.9.0 Python/3.10 configured -- resuming normal operations
+[Sun Mar 10 20:32:05.025115 2024] [core:notice] [pid 34098:tid 139886145165184] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 20:46:20.392933 2024] [mpm_event:notice] [pid 34098:tid 139886145165184] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Mar 10 20:46:20.470535 2024] [mpm_event:notice] [pid 34567:tid 140524977342336] AH00489: Apache/2.4.52 (Ubuntu) mod_wsgi/4.9.0 Python/3.10 configured -- resuming normal operations
+[Sun Mar 10 20:46:20.470684 2024] [core:notice] [pid 34567:tid 140524977342336] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 20:48:37.810673 2024] [wsgi:error] [pid 34569:tid 140524837115456] [client 118.26.38.106:47778] Target WSGI script not found or unable to stat: /var/www/html/scabies/server.wsgi
+[Sun Mar 10 20:48:38.288540 2024] [wsgi:error] [pid 34570:tid 140524862293568] [client 118.26.38.106:47832] Target WSGI script not found or unable to stat: /var/www/html/scabies/server.wsgi
+[Sun Mar 10 20:49:08.794448 2024] [wsgi:error] [pid 34569:tid 140524820330048] [client 13.40.115.63:52578] Target WSGI script not found or unable to stat: /var/www/html/scabies/server.wsgi
+[Sun Mar 10 20:49:35.778558 2024] [mpm_event:notice] [pid 34567:tid 140524977342336] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Mar 10 20:49:35.907418 2024] [mpm_event:notice] [pid 34796:tid 140575688324992] AH00489: Apache/2.4.52 (Ubuntu) mod_wsgi/4.9.0 Python/3.10 configured -- resuming normal operations
+[Sun Mar 10 20:49:35.907600 2024] [core:notice] [pid 34796:tid 140575688324992] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 20:53:32.810829 2024] [wsgi:error] [pid 34797:tid 140575658227264] [remote 129.2.89.94:53664] mod_wsgi (pid=34797): Failed to exec Python script file '/var/www/html/scabies/promiseland/server.wsgi'.
+[Sun Mar 10 20:53:32.810893 2024] [wsgi:error] [pid 34797:tid 140575658227264] [remote 129.2.89.94:53664] mod_wsgi (pid=34797): Exception occurred processing WSGI script '/var/www/html/scabies/promiseland/server.wsgi'.
+[Sun Mar 10 20:53:32.819021 2024] [wsgi:error] [pid 34797:tid 140575658227264] [remote 129.2.89.94:53664] Traceback (most recent call last):
+[Sun Mar 10 20:53:32.819080 2024] [wsgi:error] [pid 34797:tid 140575658227264] [remote 129.2.89.94:53664]   File "/var/www/html/scabies/promiseland/server.wsgi", line 4, in <module>
+[Sun Mar 10 20:53:32.819084 2024] [wsgi:error] [pid 34797:tid 140575658227264] [remote 129.2.89.94:53664]     from app import app as application
+[Sun Mar 10 20:53:32.819098 2024] [wsgi:error] [pid 34797:tid 140575658227264] [remote 129.2.89.94:53664] ModuleNotFoundError: No module named 'app'
+[Sun Mar 10 20:57:14.181049 2024] [wsgi:error] [pid 34797:tid 140575540729408] [remote 162.158.159.169:65336] mod_wsgi (pid=34797): Failed to exec Python script file '/var/www/html/scabies/promiseland/server.wsgi'.
+[Sun Mar 10 20:57:14.181134 2024] [wsgi:error] [pid 34797:tid 140575540729408] [remote 162.158.159.169:65336] mod_wsgi (pid=34797): Exception occurred processing WSGI script '/var/www/html/scabies/promiseland/server.wsgi'.
+[Sun Mar 10 20:57:14.181238 2024] [wsgi:error] [pid 34797:tid 140575540729408] [remote 162.158.159.169:65336] Traceback (most recent call last):
+[Sun Mar 10 20:57:14.181264 2024] [wsgi:error] [pid 34797:tid 140575540729408] [remote 162.158.159.169:65336]   File "/var/www/html/scabies/promiseland/server.wsgi", line 4, in <module>
+[Sun Mar 10 20:57:14.181270 2024] [wsgi:error] [pid 34797:tid 140575540729408] [remote 162.158.159.169:65336]     from app import app as application
+[Sun Mar 10 20:57:14.181290 2024] [wsgi:error] [pid 34797:tid 140575540729408] [remote 162.158.159.169:65336] ModuleNotFoundError: No module named 'app'
+[Sun Mar 10 20:57:40.952268 2024] [mpm_event:notice] [pid 34796:tid 140575688324992] AH00491: caught SIGTERM, shutting down
+[Sun Mar 10 21:58:47.070104 2024] [mpm_event:notice] [pid 39526:tid 139980240271232] AH00489: Apache/2.4.52 (Ubuntu) mod_wsgi/4.9.0 Python/3.10 configured -- resuming normal operations
+[Sun Mar 10 21:58:47.070277 2024] [core:notice] [pid 39526:tid 139980240271232] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 21:59:00.921632 2024] [proxy:warn] [pid 39529:tid 139980218058304] [client 129.2.192.157:63566] AH01144: No protocol handler was valid for the URL / (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Mar 10 21:59:18.231430 2024] [proxy:warn] [pid 39529:tid 139980201272896] [client 129.2.192.157:63597] AH01144: No protocol handler was valid for the URL / (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Mar 10 22:00:29.956422 2024] [proxy:warn] [pid 39528:tid 139980209665600] [client 129.2.192.157:63694] AH01144: No protocol handler was valid for the URL / (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Mar 10 22:00:35.887841 2024] [mpm_event:notice] [pid 39526:tid 139980240271232] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Mar 10 22:00:36.046891 2024] [mpm_event:notice] [pid 39725:tid 140660886636416] AH00489: Apache/2.4.52 (Ubuntu) mod_wsgi/4.9.0 Python/3.10 configured -- resuming normal operations
+[Sun Mar 10 22:00:36.047097 2024] [core:notice] [pid 39725:tid 140660886636416] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 22:02:28.530165 2024] [proxy:warn] [pid 39728:tid 140660864423488] [client 129.2.192.157:63852] AH01144: No protocol handler was valid for the URL / (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Mar 10 22:02:28.620668 2024] [proxy:warn] [pid 39727:tid 140660864423488] [client 129.2.192.157:63853] AH01144: No protocol handler was valid for the URL /favicon.ico (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule., referer: http://pland.ouodesignllc.com/
+[Sun Mar 10 22:02:31.434674 2024] [proxy:warn] [pid 39727:tid 140660782921280] [client 129.2.192.157:63855] AH01144: No protocol handler was valid for the URL / (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Mar 10 22:03:28.669236 2024] [mpm_event:notice] [pid 39725:tid 140660886636416] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Mar 10 22:03:28.814677 2024] [mpm_event:notice] [pid 39949:tid 140643601348480] AH00489: Apache/2.4.52 (Ubuntu) mod_wsgi/4.9.0 Python/3.10 configured -- resuming normal operations
+[Sun Mar 10 22:03:28.814843 2024] [core:notice] [pid 39949:tid 140643601348480] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 22:03:31.861468 2024] [proxy:warn] [pid 39952:tid 140643579135552] [client 129.2.192.157:63863] AH01144: No protocol handler was valid for the URL / (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Mar 10 22:03:33.270072 2024] [proxy:warn] [pid 39951:tid 140643579135552] [client 129.2.192.157:63862] AH01144: No protocol handler was valid for the URL / (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Mar 10 22:04:01.252653 2024] [proxy:warn] [pid 39952:tid 140643562350144] [client 129.2.192.157:63869] AH01144: No protocol handler was valid for the URL / (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Mar 10 22:10:13.551114 2024] [mpm_event:notice] [pid 39949:tid 140643601348480] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Mar 10 22:10:13.692332 2024] [mpm_event:notice] [pid 40356:tid 140010755458944] AH00489: Apache/2.4.52 (Ubuntu) mod_wsgi/4.9.0 Python/3.10 configured -- resuming normal operations
+[Sun Mar 10 22:10:13.692573 2024] [core:notice] [pid 40356:tid 140010755458944] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 22:10:24.316060 2024] [proxy:warn] [pid 40359:tid 140010632246848] [client 129.2.192.157:63939] AH01144: No protocol handler was valid for the URL / (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Mar 10 22:10:24.375290 2024] [proxy:warn] [pid 40359:tid 140010615461440] [client 129.2.192.157:20868] AH01144: No protocol handler was valid for the URL /favicon.ico (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule., referer: http://pland.ouodesignllc.com/
+[Sun Mar 10 22:12:13.595134 2024] [mpm_event:notice] [pid 40356:tid 140010755458944] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Mar 10 22:12:13.749195 2024] [so:warn] [pid 40556:tid 139871825930112] AH01574: module proxy_module is already loaded, skipping
+[Sun Mar 10 22:12:13.762387 2024] [mpm_event:notice] [pid 40557:tid 139871825930112] AH00489: Apache/2.4.52 (Ubuntu) OpenSSL/3.0.2 mod_wsgi/4.9.0 Python/3.10 configured -- resuming normal operations
+[Sun Mar 10 22:12:13.762419 2024] [core:notice] [pid 40557:tid 139871825930112] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 22:15:36.966473 2024] [core:warn] [pid 40557:tid 139871825930112] AH00045: child process 40559 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:15:36.966577 2024] [core:warn] [pid 40557:tid 139871825930112] AH00045: child process 40560 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:15:38.968801 2024] [core:warn] [pid 40557:tid 139871825930112] AH00045: child process 40559 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:15:38.968873 2024] [core:warn] [pid 40557:tid 139871825930112] AH00045: child process 40560 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:15:40.971134 2024] [core:warn] [pid 40557:tid 139871825930112] AH00045: child process 40559 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:15:40.971192 2024] [core:warn] [pid 40557:tid 139871825930112] AH00045: child process 40560 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:15:42.973430 2024] [core:error] [pid 40557:tid 139871825930112] AH00046: child process 40559 still did not exit, sending a SIGKILL
+[Sun Mar 10 22:15:42.975063 2024] [core:error] [pid 40557:tid 139871825930112] AH00046: child process 40560 still did not exit, sending a SIGKILL
+[Sun Mar 10 22:15:43.978703 2024] [mpm_event:notice] [pid 40557:tid 139871825930112] AH00491: caught SIGTERM, shutting down
+[Sun Mar 10 22:30:59.210234 2024] [so:warn] [pid 41387:tid 139888237467520] AH01574: module proxy_module is already loaded, skipping
+[Sun Mar 10 22:30:59.222189 2024] [mpm_event:notice] [pid 41388:tid 139888237467520] AH00489: Apache/2.4.52 (Ubuntu) mod_wsgi/4.9.0 Python/3.10 configured -- resuming normal operations
+[Sun Mar 10 22:30:59.222230 2024] [core:notice] [pid 41388:tid 139888237467520] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 22:32:23.254954 2024] [mpm_event:notice] [pid 41388:tid 139888237467520] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Mar 10 22:32:26.622019 2024] [core:warn] [pid 41388:tid 139888237467520] AH00045: child process 41390 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:32:28.624261 2024] [core:warn] [pid 41388:tid 139888237467520] AH00045: child process 41390 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:32:30.627017 2024] [core:warn] [pid 41388:tid 139888237467520] AH00045: child process 41390 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:32:32.629256 2024] [core:error] [pid 41388:tid 139888237467520] AH00046: child process 41390 still did not exit, sending a SIGKILL
+[Sun Mar 10 22:32:33.731384 2024] [so:warn] [pid 41572:tid 139773656106880] AH01574: module proxy_module is already loaded, skipping
+[Sun Mar 10 22:32:33.745797 2024] [mpm_event:notice] [pid 41573:tid 139773656106880] AH00489: Apache/2.4.52 (Ubuntu) mod_wsgi/4.9.0 Python/3.10 configured -- resuming normal operations
+[Sun Mar 10 22:32:33.745833 2024] [core:notice] [pid 41573:tid 139773656106880] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 22:32:39.877888 2024] [mpm_event:notice] [pid 41573:tid 139773656106880] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sun Mar 10 22:32:39.937421 2024] [so:warn] [pid 41573:tid 139773656106880] AH01574: module proxy_module is already loaded, skipping
+[Sun Mar 10 22:32:39.939265 2024] [proxy_html:notice] [pid 41573:tid 139773656106880] AH01425: I18n support in mod_proxy_html requires mod_xml2enc. Without it, non-ASCII characters in proxied pages are likely to display incorrectly.
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 10.17.0.8. Set the 'ServerName' directive globally to suppress this message
+[Sun Mar 10 22:32:39.943067 2024] [mpm_event:notice] [pid 41573:tid 139773656106880] AH00489: Apache/2.4.52 (Ubuntu) mod_wsgi/4.9.0 Python/3.10 configured -- resuming normal operations
+[Sun Mar 10 22:32:39.943098 2024] [core:notice] [pid 41573:tid 139773656106880] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 22:37:33.944905 2024] [proxy_http:error] [pid 41576:tid 139773629412928] (70007)The timeout specified has expired: [client 129.2.192.157:64105] AH01102: error reading status line from remote server 127.0.0.1:8050
+[Sun Mar 10 22:37:33.945557 2024] [proxy:error] [pid 41576:tid 139773629412928] [client 129.2.192.157:64105] AH00898: Error reading from remote server returned by /
+[Sun Mar 10 22:37:43.717701 2024] [mpm_event:notice] [pid 41573:tid 139773656106880] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Mar 10 22:37:47.080148 2024] [core:warn] [pid 41573:tid 139773656106880] AH00045: child process 41658 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:37:47.080208 2024] [core:warn] [pid 41573:tid 139773656106880] AH00045: child process 41705 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:37:49.082375 2024] [core:warn] [pid 41573:tid 139773656106880] AH00045: child process 41658 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:37:49.082440 2024] [core:warn] [pid 41573:tid 139773656106880] AH00045: child process 41705 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:37:51.084667 2024] [core:warn] [pid 41573:tid 139773656106880] AH00045: child process 41658 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:37:51.084741 2024] [core:warn] [pid 41573:tid 139773656106880] AH00045: child process 41705 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:37:53.086931 2024] [core:error] [pid 41573:tid 139773656106880] AH00046: child process 41658 still did not exit, sending a SIGKILL
+[Sun Mar 10 22:37:53.086989 2024] [core:error] [pid 41573:tid 139773656106880] AH00046: child process 41705 still did not exit, sending a SIGKILL
+[Sun Mar 10 22:37:54.201037 2024] [so:warn] [pid 41922:tid 140049841964928] AH01574: module proxy_module is already loaded, skipping
+[Sun Mar 10 22:37:54.217007 2024] [mpm_event:notice] [pid 41923:tid 140049841964928] AH00489: Apache/2.4.52 (Ubuntu) mod_wsgi/4.9.0 Python/3.10 configured -- resuming normal operations
+[Sun Mar 10 22:37:54.217053 2024] [core:notice] [pid 41923:tid 140049841964928] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 22:39:27.509414 2024] [mpm_event:notice] [pid 41923:tid 140049841964928] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Mar 10 22:39:30.878353 2024] [core:warn] [pid 41923:tid 140049841964928] AH00045: child process 41925 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:39:32.880670 2024] [core:warn] [pid 41923:tid 140049841964928] AH00045: child process 41925 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:39:34.882936 2024] [core:warn] [pid 41923:tid 140049841964928] AH00045: child process 41925 still did not exit, sending a SIGTERM
+[Sun Mar 10 22:39:36.885210 2024] [core:error] [pid 41923:tid 140049841964928] AH00046: child process 41925 still did not exit, sending a SIGKILL
+[Sun Mar 10 22:39:37.985175 2024] [so:warn] [pid 42051:tid 140139136444288] AH01574: module proxy_module is already loaded, skipping
+[Sun Mar 10 22:39:37.994896 2024] [mpm_event:notice] [pid 42052:tid 140139136444288] AH00489: Apache/2.4.52 (Ubuntu) mod_wsgi/4.9.0 Python/3.10 configured -- resuming normal operations
+[Sun Mar 10 22:39:37.994931 2024] [core:notice] [pid 42052:tid 140139136444288] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 22:39:38.234613 2024] [proxy:warn] [pid 42055:tid 140139114014272] [client 129.2.192.157:64177] AH01144: No protocol handler was valid for the URL / (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Mar 10 22:39:38.314697 2024] [proxy:warn] [pid 42055:tid 140139097228864] [client 129.2.192.157:64178] AH01144: No protocol handler was valid for the URL /favicon.ico (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule., referer: http://www.pland.ouodesignllc.com/
+[Sun Mar 10 22:41:11.637340 2024] [proxy:warn] [pid 42054:tid 140139114014272] [client 205.210.31.146:57596] AH01144: No protocol handler was valid for the URL / (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Mar 10 22:43:32.628430 2024] [proxy:warn] [pid 42054:tid 140139097228864] [client 129.2.192.157:64218] AH01144: No protocol handler was valid for the URL / (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Mar 10 22:43:32.691518 2024] [proxy:warn] [pid 42055:tid 140139011503680] [client 129.2.192.157:64217] AH01144: No protocol handler was valid for the URL /favicon.ico (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule., referer: http://www.pland.ouodesignllc.com/
+[Sun Mar 10 22:43:34.448746 2024] [proxy:warn] [pid 42055:tid 140139003110976] [client 129.2.192.157:2310] AH01144: No protocol handler was valid for the URL / (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Mar 10 22:43:44.782949 2024] [mpm_event:notice] [pid 42052:tid 140139136444288] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Mar 10 22:43:44.910570 2024] [so:warn] [pid 42235:tid 139690090735488] AH01574: module proxy_module is already loaded, skipping
+[Sun Mar 10 22:43:44.922969 2024] [mpm_event:notice] [pid 42236:tid 139690090735488] AH00489: Apache/2.4.52 (Ubuntu) mod_wsgi/4.9.0 Python/3.10 configured -- resuming normal operations
+[Sun Mar 10 22:43:44.923021 2024] [core:notice] [pid 42236:tid 139690090735488] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 22:44:11.010773 2024] [proxy:warn] [pid 42238:tid 139689960916544] [client 129.2.192.157:64231] AH01144: No protocol handler was valid for the URL / (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Mar 10 22:44:11.087403 2024] [proxy:warn] [pid 42238:tid 139689944131136] [client 129.2.192.157:54150] AH01144: No protocol handler was valid for the URL /favicon.ico (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule., referer: http://pland.ouodesignllc.com/
+[Sun Mar 10 22:45:15.213288 2024] [mpm_event:notice] [pid 42236:tid 139690090735488] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Mar 10 22:45:15.332409 2024] [so:warn] [pid 42331:tid 140634364737408] AH01574: module proxy_module is already loaded, skipping
+[Sun Mar 10 22:45:15.342003 2024] [mpm_event:notice] [pid 42332:tid 140634364737408] AH00489: Apache/2.4.52 (Ubuntu) mod_wsgi/4.9.0 Python/3.10 configured -- resuming normal operations
+[Sun Mar 10 22:45:15.342033 2024] [core:notice] [pid 42332:tid 140634364737408] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 10 22:45:19.896514 2024] [proxy:warn] [pid 42334:tid 140634274920000] [client 129.2.192.157:64241] AH01144: No protocol handler was valid for the URL / (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.
+[Sun Mar 10 22:45:21.898257 2024] [proxy:warn] [pid 42334:tid 140634258134592] [client 129.2.192.157:28552] AH01144: No protocol handler was valid for the URL / (scheme 'http'). If you are using a DSO version of mod_proxy, make sure the proxy submodules are included in the configuration using LoadModule.

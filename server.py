@@ -9,10 +9,12 @@ from dateutil.relativedelta import relativedelta
 from dash.dependencies import Output, Input
 import random
 from functions import *
+import flask
 
+server = flask.Flask(__name__)
 
 now = datetime.now()
-last_month_date = now + relativedelta(weeks=-8)
+last_month_date = now + relativedelta(weeks=-2)
 date_format = "%m/%d/%Y"
 startDate = last_month_date.strftime(date_format)
 endDate = (datetime.now() + relativedelta(weeks=6)).strftime(date_format)
@@ -59,7 +61,7 @@ external_stylesheets = [
         "rel": "stylesheet",
     },
 ]
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app = dash.Dash(__name__, server=server, external_stylesheets=external_stylesheets)
 app.title = "Treasury Securities Analytics: A Decision Tool in the Purhcase of Treasury Bill Secrities"
 
 app.layout = html.Div(

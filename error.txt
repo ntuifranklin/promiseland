@@ -1,0 +1,1194 @@
+Mar 10 19:39:01 promised-land-dash-app systemd[1]: Stopping The Apache HTTP Server...
+░░ Subject: A stop job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 6936.
+Mar 10 19:39:02 promised-land-dash-app apachectl[28091]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Mar 10 19:39:02 promised-land-dash-app systemd[1]: apache2.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has successfully entered the 'dead' state.
+Mar 10 19:39:02 promised-land-dash-app systemd[1]: Stopped The Apache HTTP Server.
+░░ Subject: A stop job for unit apache2.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has finished.
+░░ 
+░░ The job identifier is 6936 and the job result is done.
+Mar 10 19:39:02 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 6936.
+Mar 10 19:39:02 promised-land-dash-app apachectl[28100]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Mar 10 19:39:02 promised-land-dash-app systemd[1]: Started The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished successfully.
+░░ 
+░░ The job identifier is 6936.
+Mar 10 20:13:12 promised-land-dash-app systemd[1]: Reloading The Apache HTTP Server...
+░░ Subject: A reload job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A reload job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 8568.
+Mar 10 20:13:12 promised-land-dash-app apachectl[29392]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Mar 10 20:13:12 promised-land-dash-app systemd[1]: Reloaded The Apache HTTP Server.
+░░ Subject: A reload job for unit apache2.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A reload job for unit apache2.service has finished.
+░░ 
+░░ The job identifier is 8568 and the job result is done.
+Mar 10 20:32:04 promised-land-dash-app systemd[1]: Stopping The Apache HTTP Server...
+░░ Subject: A stop job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 8654.
+Mar 10 20:32:04 promised-land-dash-app apachectl[34090]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Mar 10 20:32:04 promised-land-dash-app systemd[1]: apache2.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has successfully entered the 'dead' state.
+Mar 10 20:32:04 promised-land-dash-app systemd[1]: Stopped The Apache HTTP Server.
+░░ Subject: A stop job for unit apache2.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has finished.
+░░ 
+░░ The job identifier is 8654 and the job result is done.
+Mar 10 20:32:04 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 8654.
+Mar 10 20:32:05 promised-land-dash-app apachectl[34097]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Mar 10 20:32:05 promised-land-dash-app systemd[1]: Started The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished successfully.
+░░ 
+░░ The job identifier is 8654.
+Mar 10 20:46:20 promised-land-dash-app systemd[1]: Stopping The Apache HTTP Server...
+░░ Subject: A stop job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 8737.
+Mar 10 20:46:20 promised-land-dash-app apachectl[34558]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Mar 10 20:46:20 promised-land-dash-app systemd[1]: apache2.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has successfully entered the 'dead' state.
+Mar 10 20:46:20 promised-land-dash-app systemd[1]: Stopped The Apache HTTP Server.
+░░ Subject: A stop job for unit apache2.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has finished.
+░░ 
+░░ The job identifier is 8737 and the job result is done.
+Mar 10 20:46:20 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 8737.
+Mar 10 20:46:20 promised-land-dash-app apachectl[34566]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Mar 10 20:46:20 promised-land-dash-app systemd[1]: Started The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished successfully.
+░░ 
+░░ The job identifier is 8737.
+Mar 10 20:49:35 promised-land-dash-app systemd[1]: Stopping The Apache HTTP Server...
+░░ Subject: A stop job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 8820.
+Mar 10 20:49:35 promised-land-dash-app apachectl[34786]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Mar 10 20:49:35 promised-land-dash-app systemd[1]: apache2.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has successfully entered the 'dead' state.
+Mar 10 20:49:35 promised-land-dash-app systemd[1]: Stopped The Apache HTTP Server.
+░░ Subject: A stop job for unit apache2.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has finished.
+░░ 
+░░ The job identifier is 8820 and the job result is done.
+Mar 10 20:49:35 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 8820.
+Mar 10 20:49:35 promised-land-dash-app apachectl[34795]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Mar 10 20:49:35 promised-land-dash-app systemd[1]: Started The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished successfully.
+░░ 
+░░ The job identifier is 8820.
+Mar 10 20:57:40 promised-land-dash-app systemd[1]: Stopping The Apache HTTP Server...
+░░ Subject: A stop job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 8903.
+Mar 10 20:57:40 promised-land-dash-app apachectl[35179]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 39 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_proxy.so into server: /etc/apache2/modules/mod_proxy.so: cannot open shared object file: No such file or directory
+Mar 10 20:57:40 promised-land-dash-app apachectl[35177]: Action 'graceful-stop' failed.
+Mar 10 20:57:40 promised-land-dash-app apachectl[35177]: The Apache error log may have more information.
+Mar 10 20:57:40 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStop= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 20:57:43 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 20:57:43 promised-land-dash-app systemd[1]: Stopped The Apache HTTP Server.
+░░ Subject: A stop job for unit apache2.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has finished.
+░░ 
+░░ The job identifier is 8903 and the job result is done.
+Mar 10 20:57:43 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 8903.
+Mar 10 20:57:43 promised-land-dash-app apachectl[35188]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 39 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_proxy.so into server: /etc/apache2/modules/mod_proxy.so: cannot open shared object file: No such file or directory
+Mar 10 20:57:44 promised-land-dash-app apachectl[35184]: Action 'start' failed.
+Mar 10 20:57:44 promised-land-dash-app apachectl[35184]: The Apache error log may have more information.
+Mar 10 20:57:44 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 20:57:44 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 20:57:44 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 8903 and the job result is failed.
+Mar 10 20:59:15 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 8986.
+Mar 10 20:59:15 promised-land-dash-app apachectl[35266]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 39 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_proxy.so into server: /etc/apache2/modules/mod_proxy.so: cannot open shared object file: No such file or directory
+Mar 10 20:59:15 promised-land-dash-app apachectl[35263]: Action 'start' failed.
+Mar 10 20:59:15 promised-land-dash-app apachectl[35263]: The Apache error log may have more information.
+Mar 10 20:59:15 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 20:59:15 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 20:59:15 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 8986 and the job result is failed.
+Mar 10 21:00:38 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 9069.
+Mar 10 21:00:38 promised-land-dash-app apachectl[35337]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 39 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_proxy.so into server: /etc/apache2/modules/mod_proxy.so: cannot open shared object file: No such file or directory
+Mar 10 21:00:38 promised-land-dash-app apachectl[35334]: Action 'start' failed.
+Mar 10 21:00:38 promised-land-dash-app apachectl[35334]: The Apache error log may have more information.
+Mar 10 21:00:38 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 21:00:38 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 21:00:38 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 9069 and the job result is failed.
+Mar 10 21:01:28 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 9153.
+Mar 10 21:01:28 promised-land-dash-app apachectl[35373]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 39 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_proxy.so into server: /etc/apache2/modules/mod_proxy.so: cannot open shared object file: No such file or directory
+Mar 10 21:01:28 promised-land-dash-app apachectl[35370]: Action 'start' failed.
+Mar 10 21:01:28 promised-land-dash-app apachectl[35370]: The Apache error log may have more information.
+Mar 10 21:01:28 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 21:01:28 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 21:01:28 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 9153 and the job result is failed.
+Mar 10 21:02:15 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 9236.
+Mar 10 21:02:15 promised-land-dash-app apachectl[35418]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 39 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_proxy.so into server: /etc/apache2/modules/mod_proxy.so: cannot open shared object file: No such file or directory
+Mar 10 21:02:15 promised-land-dash-app apachectl[35415]: Action 'start' failed.
+Mar 10 21:02:15 promised-land-dash-app apachectl[35415]: The Apache error log may have more information.
+Mar 10 21:02:15 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 21:02:15 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 21:02:15 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 9236 and the job result is failed.
+Mar 10 21:02:19 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 9319.
+Mar 10 21:02:19 promised-land-dash-app apachectl[35426]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 39 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_proxy.so into server: /etc/apache2/modules/mod_proxy.so: cannot open shared object file: No such file or directory
+Mar 10 21:02:19 promised-land-dash-app apachectl[35423]: Action 'start' failed.
+Mar 10 21:02:19 promised-land-dash-app apachectl[35423]: The Apache error log may have more information.
+Mar 10 21:02:19 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 21:02:19 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 21:02:19 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 9319 and the job result is failed.
+Mar 10 21:04:21 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 9402.
+Mar 10 21:04:21 promised-land-dash-app apachectl[35534]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 39 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_proxy.so into server: /etc/apache2/modules/mod_proxy.so: cannot open shared object file: No such file or directory
+Mar 10 21:04:21 promised-land-dash-app apachectl[35531]: Action 'start' failed.
+Mar 10 21:04:21 promised-land-dash-app apachectl[35531]: The Apache error log may have more information.
+Mar 10 21:04:21 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 21:04:21 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 21:04:21 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 9402 and the job result is failed.
+Mar 10 21:12:39 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 9485.
+Mar 10 21:12:39 promised-land-dash-app apachectl[35939]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 39 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_proxy.so into server: /etc/apache2/modules/mod_proxy.so: cannot open shared object file: No such file or directory
+Mar 10 21:12:39 promised-land-dash-app apachectl[35936]: Action 'start' failed.
+Mar 10 21:12:39 promised-land-dash-app apachectl[35936]: The Apache error log may have more information.
+Mar 10 21:12:39 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 21:12:39 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 21:12:39 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 9485 and the job result is failed.
+Mar 10 21:16:18 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 9568.
+Mar 10 21:16:18 promised-land-dash-app apachectl[36152]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 39 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_proxy.so into server: /etc/apache2/modules/mod_proxy.so: cannot open shared object file: No such file or directory
+Mar 10 21:16:19 promised-land-dash-app apachectl[36149]: Action 'start' failed.
+Mar 10 21:16:19 promised-land-dash-app apachectl[36149]: The Apache error log may have more information.
+Mar 10 21:16:19 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 21:16:19 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 21:16:19 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 9568 and the job result is failed.
+Mar 10 21:17:16 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 9651.
+Mar 10 21:17:16 promised-land-dash-app apachectl[36249]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 39 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_proxy.so into server: /etc/apache2/modules/mod_proxy.so: cannot open shared object file: No such file or directory
+Mar 10 21:17:16 promised-land-dash-app apachectl[36246]: Action 'start' failed.
+Mar 10 21:17:16 promised-land-dash-app apachectl[36246]: The Apache error log may have more information.
+Mar 10 21:17:16 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 21:17:16 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 21:17:16 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 9651 and the job result is failed.
+Mar 10 21:20:14 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 9734.
+Mar 10 21:20:14 promised-land-dash-app apachectl[36421]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 39 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_proxy.so into server: /etc/apache2/modules/mod_proxy.so: cannot open shared object file: No such file or directory
+Mar 10 21:20:14 promised-land-dash-app apachectl[36418]: Action 'start' failed.
+Mar 10 21:20:14 promised-land-dash-app apachectl[36418]: The Apache error log may have more information.
+Mar 10 21:20:14 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 21:20:14 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 21:20:14 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 9734 and the job result is failed.
+Mar 10 21:24:20 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 9817.
+Mar 10 21:24:20 promised-land-dash-app apachectl[36667]: AH00526: Syntax error on line 45 of /etc/apache2/sites-enabled/000-default.conf:
+Mar 10 21:24:20 promised-land-dash-app apachectl[36667]: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+Mar 10 21:24:20 promised-land-dash-app apachectl[36664]: Action 'start' failed.
+Mar 10 21:24:20 promised-land-dash-app apachectl[36664]: The Apache error log may have more information.
+Mar 10 21:24:20 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 21:24:20 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 21:24:20 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 9817 and the job result is failed.
+Mar 10 21:35:30 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 9900.
+Mar 10 21:35:30 promised-land-dash-app apachectl[37355]: AH00526: Syntax error on line 29 of /etc/apache2/sites-enabled/000-default.conf:
+Mar 10 21:35:30 promised-land-dash-app apachectl[37355]: Invalid command 'ProxyPreserveHost', perhaps misspelled or defined by a module not included in the server configuration
+Mar 10 21:35:30 promised-land-dash-app apachectl[37352]: Action 'start' failed.
+Mar 10 21:35:30 promised-land-dash-app apachectl[37352]: The Apache error log may have more information.
+Mar 10 21:35:30 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 21:35:30 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 21:35:30 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 9900 and the job result is failed.
+Mar 10 21:42:41 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 9983.
+Mar 10 21:42:41 promised-land-dash-app apachectl[37805]: AH00526: Syntax error on line 29 of /etc/apache2/sites-enabled/000-default.conf:
+Mar 10 21:42:41 promised-land-dash-app apachectl[37805]: Invalid command 'ProxyPreserveHost', perhaps misspelled or defined by a module not included in the server configuration
+Mar 10 21:42:41 promised-land-dash-app apachectl[37802]: Action 'start' failed.
+Mar 10 21:42:41 promised-land-dash-app apachectl[37802]: The Apache error log may have more information.
+Mar 10 21:42:41 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 21:42:41 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 21:42:41 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 9983 and the job result is failed.
+Mar 10 21:43:36 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10067.
+Mar 10 21:43:36 promised-land-dash-app apachectl[37858]: AH00526: Syntax error on line 29 of /etc/apache2/sites-enabled/000-default.conf:
+Mar 10 21:43:36 promised-land-dash-app apachectl[37858]: Invalid command 'ProxyPreserveHost', perhaps misspelled or defined by a module not included in the server configuration
+Mar 10 21:43:36 promised-land-dash-app apachectl[37855]: Action 'start' failed.
+Mar 10 21:43:36 promised-land-dash-app apachectl[37855]: The Apache error log may have more information.
+Mar 10 21:43:36 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 21:43:36 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 21:43:36 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 10067 and the job result is failed.
+Mar 10 21:53:34 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10150.
+Mar 10 21:53:34 promised-land-dash-app apachectl[39273]: AH00526: Syntax error on line 29 of /etc/apache2/sites-enabled/000-default.conf:
+Mar 10 21:53:34 promised-land-dash-app apachectl[39273]: Invalid command 'ProxyPreserveHost', perhaps misspelled or defined by a module not included in the server configuration
+Mar 10 21:53:34 promised-land-dash-app apachectl[39270]: Action 'start' failed.
+Mar 10 21:53:34 promised-land-dash-app apachectl[39270]: The Apache error log may have more information.
+Mar 10 21:53:34 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 21:53:34 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 21:53:34 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 10150 and the job result is failed.
+Mar 10 21:54:31 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10233.
+Mar 10 21:54:31 promised-land-dash-app apachectl[39324]: AH00526: Syntax error on line 29 of /etc/apache2/sites-enabled/000-default.conf:
+Mar 10 21:54:31 promised-land-dash-app apachectl[39324]: Invalid command 'ProxyPreserveHost', perhaps misspelled or defined by a module not included in the server configuration
+Mar 10 21:54:31 promised-land-dash-app apachectl[39321]: Action 'start' failed.
+Mar 10 21:54:31 promised-land-dash-app apachectl[39321]: The Apache error log may have more information.
+Mar 10 21:54:31 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 21:54:31 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 21:54:31 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 10233 and the job result is failed.
+Mar 10 21:55:22 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10316.
+Mar 10 21:55:22 promised-land-dash-app apachectl[39367]: AH00526: Syntax error on line 29 of /etc/apache2/sites-enabled/000-default.conf:
+Mar 10 21:55:22 promised-land-dash-app apachectl[39367]: Invalid command 'ProxyPreserveHost', perhaps misspelled or defined by a module not included in the server configuration
+Mar 10 21:55:22 promised-land-dash-app apachectl[39364]: Action 'start' failed.
+Mar 10 21:55:22 promised-land-dash-app apachectl[39364]: The Apache error log may have more information.
+Mar 10 21:55:22 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 21:55:22 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 21:55:22 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 10316 and the job result is failed.
+Mar 10 21:58:47 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10399.
+Mar 10 21:58:47 promised-land-dash-app apachectl[39525]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 10.17.0.8. Set the 'ServerName' directive globally to suppress this message
+Mar 10 21:58:47 promised-land-dash-app systemd[1]: Started The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished successfully.
+░░ 
+░░ The job identifier is 10399.
+Mar 10 22:00:35 promised-land-dash-app systemd[1]: Stopping The Apache HTTP Server...
+░░ Subject: A stop job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10482.
+Mar 10 22:00:35 promised-land-dash-app apachectl[39716]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 10.17.0.8. Set the 'ServerName' directive globally to suppress this message
+Mar 10 22:00:35 promised-land-dash-app systemd[1]: apache2.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has successfully entered the 'dead' state.
+Mar 10 22:00:35 promised-land-dash-app systemd[1]: Stopped The Apache HTTP Server.
+░░ Subject: A stop job for unit apache2.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has finished.
+░░ 
+░░ The job identifier is 10482 and the job result is done.
+Mar 10 22:00:36 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10482.
+Mar 10 22:00:36 promised-land-dash-app apachectl[39724]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 10.17.0.8. Set the 'ServerName' directive globally to suppress this message
+Mar 10 22:00:36 promised-land-dash-app systemd[1]: Started The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished successfully.
+░░ 
+░░ The job identifier is 10482.
+Mar 10 22:03:28 promised-land-dash-app systemd[1]: Stopping The Apache HTTP Server...
+░░ Subject: A stop job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10565.
+Mar 10 22:03:28 promised-land-dash-app apachectl[39941]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 10.17.0.8. Set the 'ServerName' directive globally to suppress this message
+Mar 10 22:03:28 promised-land-dash-app systemd[1]: apache2.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has successfully entered the 'dead' state.
+Mar 10 22:03:28 promised-land-dash-app systemd[1]: Stopped The Apache HTTP Server.
+░░ Subject: A stop job for unit apache2.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has finished.
+░░ 
+░░ The job identifier is 10565 and the job result is done.
+Mar 10 22:03:28 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10565.
+Mar 10 22:03:28 promised-land-dash-app apachectl[39948]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 10.17.0.8. Set the 'ServerName' directive globally to suppress this message
+Mar 10 22:03:28 promised-land-dash-app systemd[1]: Started The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished successfully.
+░░ 
+░░ The job identifier is 10565.
+Mar 10 22:10:13 promised-land-dash-app systemd[1]: Stopping The Apache HTTP Server...
+░░ Subject: A stop job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10648.
+Mar 10 22:10:13 promised-land-dash-app apachectl[40347]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 10.17.0.8. Set the 'ServerName' directive globally to suppress this message
+Mar 10 22:10:13 promised-land-dash-app systemd[1]: apache2.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has successfully entered the 'dead' state.
+Mar 10 22:10:13 promised-land-dash-app systemd[1]: Stopped The Apache HTTP Server.
+░░ Subject: A stop job for unit apache2.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has finished.
+░░ 
+░░ The job identifier is 10648 and the job result is done.
+Mar 10 22:10:13 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10648.
+Mar 10 22:10:13 promised-land-dash-app apachectl[40355]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 10.17.0.8. Set the 'ServerName' directive globally to suppress this message
+Mar 10 22:10:13 promised-land-dash-app systemd[1]: Started The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished successfully.
+░░ 
+░░ The job identifier is 10648.
+Mar 10 22:12:13 promised-land-dash-app systemd[1]: Stopping The Apache HTTP Server...
+░░ Subject: A stop job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10731.
+Mar 10 22:12:13 promised-land-dash-app apachectl[40549]: [Sun Mar 10 22:12:13.589447 2024] [so:warn] [pid 40549:tid 140624040802176] AH01574: module proxy_module is already loaded, skipping
+Mar 10 22:12:13 promised-land-dash-app apachectl[40549]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 10.17.0.8. Set the 'ServerName' directive globally to suppress this message
+Mar 10 22:12:13 promised-land-dash-app systemd[1]: apache2.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has successfully entered the 'dead' state.
+Mar 10 22:12:13 promised-land-dash-app systemd[1]: Stopped The Apache HTTP Server.
+░░ Subject: A stop job for unit apache2.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has finished.
+░░ 
+░░ The job identifier is 10731 and the job result is done.
+Mar 10 22:12:13 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10731.
+Mar 10 22:12:13 promised-land-dash-app apachectl[40556]: [Sun Mar 10 22:12:13.737080 2024] [so:warn] [pid 40556:tid 139871825930112] AH01574: module proxy_module is already loaded, skipping
+Mar 10 22:12:13 promised-land-dash-app apachectl[40556]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 10.17.0.8. Set the 'ServerName' directive globally to suppress this message
+Mar 10 22:12:13 promised-land-dash-app systemd[1]: Started The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished successfully.
+░░ 
+░░ The job identifier is 10731.
+Mar 10 22:15:33 promised-land-dash-app systemd[1]: Stopping The Apache HTTP Server...
+░░ Subject: A stop job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10814.
+Mar 10 22:15:33 promised-land-dash-app apachectl[40721]: [Sun Mar 10 22:15:33.603236 2024] [so:warn] [pid 40721:tid 140646442841984] AH01574: module proxy_module is already loaded, skipping
+Mar 10 22:15:33 promised-land-dash-app apachectl[40721]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 31 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_headers.so into server: /etc/apache2/modules/mod_headers.so: cannot open shared object file: No such file or directory
+Mar 10 22:15:33 promised-land-dash-app apachectl[40719]: Action 'graceful-stop' failed.
+Mar 10 22:15:33 promised-land-dash-app apachectl[40719]: The Apache error log may have more information.
+Mar 10 22:15:33 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStop= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 22:15:44 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 22:15:44 promised-land-dash-app systemd[1]: Stopped The Apache HTTP Server.
+░░ Subject: A stop job for unit apache2.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit apache2.service has finished.
+░░ 
+░░ The job identifier is 10814 and the job result is done.
+Mar 10 22:15:44 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10814.
+Mar 10 22:15:44 promised-land-dash-app apachectl[40735]: [Sun Mar 10 22:15:44.077968 2024] [so:warn] [pid 40735:tid 140483649427328] AH01574: module proxy_module is already loaded, skipping
+Mar 10 22:15:44 promised-land-dash-app apachectl[40735]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 31 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_headers.so into server: /etc/apache2/modules/mod_headers.so: cannot open shared object file: No such file or directory
+Mar 10 22:15:44 promised-land-dash-app apachectl[40731]: Action 'start' failed.
+Mar 10 22:15:44 promised-land-dash-app apachectl[40731]: The Apache error log may have more information.
+Mar 10 22:15:44 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 22:15:44 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 22:15:44 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 10814 and the job result is failed.
+Mar 10 22:18:24 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10897.
+Mar 10 22:18:24 promised-land-dash-app apachectl[40872]: [Sun Mar 10 22:18:24.863525 2024] [so:warn] [pid 40872:tid 140169664780160] AH01574: module proxy_module is already loaded, skipping
+Mar 10 22:18:24 promised-land-dash-app apachectl[40872]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 31 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_headers.so into server: /etc/apache2/modules/mod_headers.so: cannot open shared object file: No such file or directory
+Mar 10 22:18:24 promised-land-dash-app apachectl[40869]: Action 'start' failed.
+Mar 10 22:18:24 promised-land-dash-app apachectl[40869]: The Apache error log may have more information.
+Mar 10 22:18:24 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 22:18:24 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 22:18:24 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 10897 and the job result is failed.
+Mar 10 22:19:05 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 10980.
+Mar 10 22:19:05 promised-land-dash-app apachectl[40927]: [Sun Mar 10 22:19:05.558771 2024] [so:warn] [pid 40927:tid 140533291644800] AH01574: module proxy_module is already loaded, skipping
+Mar 10 22:19:05 promised-land-dash-app apachectl[40927]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 31 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_headers.so into server: /etc/apache2/modules/mod_headers.so: cannot open shared object file: No such file or directory
+Mar 10 22:19:05 promised-land-dash-app apachectl[40924]: Action 'start' failed.
+Mar 10 22:19:05 promised-land-dash-app apachectl[40924]: The Apache error log may have more information.
+Mar 10 22:19:05 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 22:19:05 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 22:19:05 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 10980 and the job result is failed.
+Mar 10 22:19:13 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 11063.
+Mar 10 22:19:13 promised-land-dash-app apachectl[40947]: [Sun Mar 10 22:19:13.686214 2024] [so:warn] [pid 40947:tid 140423748888448] AH01574: module proxy_module is already loaded, skipping
+Mar 10 22:19:13 promised-land-dash-app apachectl[40947]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 31 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_headers.so into server: /etc/apache2/modules/mod_headers.so: cannot open shared object file: No such file or directory
+Mar 10 22:19:13 promised-land-dash-app apachectl[40944]: Action 'start' failed.
+Mar 10 22:19:13 promised-land-dash-app apachectl[40944]: The Apache error log may have more information.
+Mar 10 22:19:13 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 22:19:13 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 22:19:13 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 11063 and the job result is failed.
+Mar 10 22:21:15 promised-land-dash-app systemd[1]: Starting The Apache HTTP Server...
+░░ Subject: A start job for unit apache2.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has begun execution.
+░░ 
+░░ The job identifier is 11146.
+Mar 10 22:21:15 promised-land-dash-app apachectl[41041]: [Sun Mar 10 22:21:15.798557 2024] [so:warn] [pid 41041:tid 140408804734848] AH01574: module proxy_module is already loaded, skipping
+Mar 10 22:21:15 promised-land-dash-app apachectl[41041]: apache2: Syntax error on line 225 of /etc/apache2/apache2.conf: Syntax error on line 31 of /etc/apache2/sites-enabled/000-default.conf: Cannot load modules/mod_headers.so into server: /etc/apache2/modules/mod_headers.so: cannot open shared object file: No such file or directory
+Mar 10 22:21:15 promised-land-dash-app apachectl[41038]: Action 'start' failed.
+Mar 10 22:21:15 promised-land-dash-app apachectl[41038]: The Apache error log may have more information.
+Mar 10 22:21:15 promised-land-dash-app systemd[1]: apache2.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit apache2.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Mar 10 22:21:15 promised-land-dash-app systemd[1]: apache2.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apache2.service has entered the 'failed' state with result 'exit-code'.
+Mar 10 22:21:15 promised-land-dash-app systemd[1]: Failed to start The Apache HTTP Server.
+░░ Subject: A start job for unit apache2.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apache2.service has finished with a failure.
+░░ 
+░░ The job identifier is 11146 and the job result is failed.
