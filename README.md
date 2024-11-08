@@ -6,7 +6,23 @@ This project shows a dahsboard to compare treasury bills purchasing
 # Framework
 It is made with the dash framework
 
-# install
+# Create Environment 
+```{sh}
+python -m venv promisedlandenv
+```
+
+# Activate Enviroment
+## Windows
+```{bat}
+.\promisedlandenv\Scripts\activate.bat
+```
+
+## Linux
+```{sh}
+source promisedlandenv/bin/activate
+```
+
+# Install
 ```
     pip install -r requirements.txt
 ```

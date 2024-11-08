@@ -5,9 +5,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
 
-
-
-
 def single_term_to_days(term_str: str) -> int:
     """
         Takes a string in the format of XX-TIME that can be seperated by spaces 
@@ -120,3 +117,12 @@ def get_bill_figure(bill_data: pd.DataFrame):
     
     
 
+
+def get_bond_figure(bond_data: pd.DataFrame):
+    if bond_data is None :
+        return None
+
+    
+    bond_fig = px.scatter(bond_data, x="securityTerm", y="interestRate", symbol='securityTerm')
+
+    return bond_fig

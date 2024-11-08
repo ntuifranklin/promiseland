@@ -11,9 +11,8 @@ import random
 from functions import *
 
 
-
 now = datetime.now()
-last_month_date = now + relativedelta(weeks=-2)
+last_month_date = now + relativedelta(weeks=-8)
 date_format = "%m/%d/%Y"
 startDate = last_month_date.strftime(date_format)
 endDate = (datetime.now() + relativedelta(weeks=6)).strftime(date_format)
@@ -38,9 +37,6 @@ for column_name in ["issueDate","maturityDate","announcementDate","auctionDate"]
         data[column_name] = pd.to_datetime(data[column_name], format="%Y-%m-%dT%H:%M:%S")
 
 bill_data = data.query("pricePer100 != '' and securityType == 'Bill'")
-
-
-
 bill_fig = get_bill_figure(bill_data)
 
 styles = {
@@ -55,7 +51,7 @@ styles = {
 
 bond_data = data.query("securityType == 'Bond'")
 bond_data.sort_values("auctionDate", inplace=True)
-
+bond_data_figure = get_bond_figure(bond_data=bond_data)
 external_stylesheets = [
     {
         "href": "https://fonts.googleapis.com/css2?"
@@ -183,33 +179,7 @@ app.layout = html.Div(
                             dcc.Graph(
                                 id="bond-chart",
                                 config={"displayModeBar": True},
-                                figure={
-                                    "data": [
-                                        {
-                                            
-                                            "x": bond_data["securityTerm"],
-                                            "y": bond_data["interestRate"],
-                                            "type": "scatter",
-                                            "hovertemplate": "$%{y:.2f} "
-                                                            "<extra></extra>"
-                                                            " matures on %{x} "
-                                                            "<extra></extra>"
-                                        },
-                                    ],
-                                    "layout": {
-                                        "title": {
-                                            "text": "Treasury Bonds Price and Interest Rate",
-                                            "x": 0.05,
-                                            "xanchor": "left",
-                                            },
-                                        "xaxis" : {"fixedrange": True},
-                                        "yaxis": {
-                                            "tickprefix": "$",
-                                            "fixedrange": True,
-                                            },
-                                        
-                                        }
-                                    }
+                                figure=bond_data_figure
                                 )
                         ],
                     className="card",
@@ -281,31 +251,7 @@ def update_charts(
     filtered_bill_data = filtered_bill_data.sort_values("securityTerm")
 
     filtered_bill_fig = get_bill_figure(filtered_bill_data)
-    bill_chart_figure = {
-                        "data": [
-                            {
-                                "x": filtered_bill_data["securityTerm"],
-                                "y": filtered_bill_data["accruedInterestPer100"],
-                                "type": "lines",
-                                "hovertemplate": "$%{y:.6f}"
-                                                    "<extra></extra>"
-                            },
-
-                        ],
-                        "layout": {
-                            "title": {
-                                "text": "Treasury Bills Price",
-                                "x": 0.05,
-                                "xanchor": "left",
-                            },
-                            "xaxis": {"fixedrange": True},
-                            "yaxis": {
-                                "tickprefix": "$",
-                                "fixedrange": True,
-                            },
-                            "colorway": ["#17B897"],
-                        },
-        }
+   
     
     bondmask = (
         
@@ -318,32 +264,7 @@ def update_charts(
     )
     
     filtered_bond_data = bond_data.loc[bondmask, :]
-    bond_chart_figure = {
-                        "data": [
-                            { 
-                                "x": filtered_bond_data["securityTerm"],
-                                "y": filtered_bond_data["interestRate"],
-                                "type": "scatter",
-                                "hovertemplate": "$%{y:.2f} "
-                                                 "<extra></extra>"
-                                                 " matures on %{x} "
-                                                 "<extra></extra>"
-                            },
-                        ],
-                        "layout": {
-                            "title": {
-                                "text": "Treasury Bonds Price and Interest Rate",
-                                "x": 0.05,
-                                "xanchor": "left",
-                                },
-                            "xaxis" : {"fixedrange": True},
-                            "yaxis": {
-                                "tickprefix": "$",
-                                "fixedrange": True,
-                                },
-                            
-                        }
-            }
+    bond_chart_figure = get_bond_figure(bond_data=filtered_bond_data)
     return filtered_bill_fig, bond_chart_figure
 
 if __name__ == "__main__":
